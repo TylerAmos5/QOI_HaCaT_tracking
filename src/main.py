@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Specify the directory where the tiff files are stored
-directory_path = 'path_to_directory'
+directory_path = '/Volumes/almc-cell-migration/Duration data + HeCAT21624__2024-02-16T15_55_35-Measurement 1/Images/'
 
 # Define the channel number (nuclear channel)
 channel_number = 2
