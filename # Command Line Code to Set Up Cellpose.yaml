@@ -1,0 +1,9 @@
+# Command Line Code to Set up Cellpose
+conda create -n cellpose python=3.9
+# conda env list # can check all available enviroments
+conda activate cellpose 
+python3 -m pip install cellpose
+cellpose --version
+pip install "numpy<2.0"
+pip install 'cellpose[gui]'
+python -m cellpose
