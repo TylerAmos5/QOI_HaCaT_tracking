@@ -13,5 +13,5 @@ for file_path in "$NPY_FOLDER"/*.npy; do
     output_name="${file_name%.npy}"
     
     # Run cellpose with the --save_png flag
-    cellpose --dir "$NPY_FOLDER" --save_png --savedir "$OUTPUT_FOLDER" --pretrained_model cyto --diameter 30 --flow_threshold 0.4 --cellprob_threshold 0.0 --use_gpu --file "$file_path"
+    cellpose --dir "$NPY_FOLDER" --pretrained_model nuclei --chan 0 --diameter 17 --save_png --savedir "$OUTPUT_FOLDER" --file "$file_path" --verbose
 done
